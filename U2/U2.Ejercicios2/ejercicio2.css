@@ -1,0 +1,50 @@
+header h1{
+  color: blue;
+  font-size: 36px;
+}
+article h1{
+  color:orange;
+  font-size: 18px;
+}
+article p:nth-child(even),article.imagen p{
+  background-color: yellow;
+}
+b.destacado{
+  color: red;
+  font-family: Courier;
+    font-style: italic;
+
+}
+span#japo{
+  color: purple;
+  font-size: 24px;
+  font-family: Garamond;
+}
+i{
+  color: green;
+  font-family: Courier;
+}
+p span{
+  color:blue;
+}
+span.destacado{
+  color: blue;
+  font-weight: bold;
+  font-size: 18px;
+}
+footer + span{
+  color: pink;
+}
+a:hover{
+  color:grey;
+  font-weight: bold;
+}
+footer a{
+  color: green;
+}
+article.imagen p{
+  font-style: italic;
+}
+footer>span{
+  font-family: courier;
+}
