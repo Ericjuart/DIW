@@ -1,0 +1,62 @@
+*{
+  font-family: fantasy;
+}
+img{
+  width: 10%;
+  height: 10%;
+}
+h1,article#noticias{
+  text-align: center;
+
+}
+article.articulo{
+  background-color: grey;
+}
+article#noticias{
+  font-family: serif;
+  color:blue;
+}
+article > p{
+  font-family: sans-serif;
+}
+a:link{
+  color:green;
+}
+a:hover{
+  color:pink;
+}
+a:visited{
+  color:purple;
+}
+a:active{
+color:red;
+}
+article i{
+font-size: 18px;
+}
+article + span{
+font-size: 18px;
+color:red;
+}
+li::first-letter{
+font-size: 24px;
+font-family: monospace;
+font-weight: bold;
+}
+p:nth-child(even){
+background-color: cadetblue;
+}
+b,i{
+text-decoration: underline;
+}
+img~figcaption{
+font-size: 10px;
+font-family: system-ui;
+}
+li:last-child{
+background-color: yellow;
+
+}
+ul::first-line{
+color:red;
+}
