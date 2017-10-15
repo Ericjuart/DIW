@@ -1,0 +1,51 @@
+table,th,td{
+  border:  1px solid black;
+  border-collapse: collapse;
+  color:black;
+  text-align: center;
+
+}
+.css{
+  color: black;
+  padding: 0 0 10px 40px;
+  background-image: url("https://vignette.wikia.nocookie.net/howtoprogram/images/a/a9/CSS3.png/revision/latest/scale-to-width-down/342?cb=20130422012035");
+  background-repeat: no-repeat;
+  background-size: 40px ;
+  height: 50px;
+  margin: 1em 1em;
+  display: block;
+}
+.html{
+  color: black;
+  padding: 0 0 0 40px;
+  background-image: url("https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png");
+  background-repeat: no-repeat;
+  background-size: 50px ;
+  height: 50px;
+  margin: 1em 0;
+  display: block;
+}
+p.tfoto{
+  color:black;
+}
+tr.ud > td.html5{
+  padding: 50px 0 0 0;
+}
+tr.ud{
+  background-color: grey;
+}
+tr{
+  background-color: white;
+}
+.foto{
+  width: 150px;
+  padding-right:50px;
+  margin-top: 150px;
+}
+tfoot{
+  align-items: center;
+}
+.foto:active{
+  background-color: yellow;
+  text-decoration: none;
+}

@@ -1,21 +1,23 @@
 *{
-  color:darkblue;
+  color:yellow;
   font-family: Verdana;
   font-size: 0.9em;
   line-height: 1.4em;
 }
 h1{
-  text-align: center;
+  align-items:center;
   text-transform: capitalize;
-  border: 1px solid red;
+  border: 1px solid white;
   padding: 10px;
   border-radius: 5px;
-  
+  width: 80px;
+  word-wrap:normal;
+  margin: auto;
 }
 p{
   text-indent: 1cm;
 }
-a:hover{
+a:active{
   text-decoration: underline;
 }
 a{
