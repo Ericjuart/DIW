@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mi pagina</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#00008B">
+    <meta name="theme-color" content="#00008b">
+    <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+      body {
+        text-align: center;
+        font-family: 'Montserrat', serif;
+        font-size: 30px;
+        min-height: 100vh;
+        background-color: #9ACD32;
+      }
+      section,footer,article{
+        display: block;
+      }
+      .cabecera{
+        display: table;
+        width: 100%;
+        background-color: #F0FFFF;
+        padding: 20px;
+
+      }
+      .logo{
+        display: table-cell;
+        vertical-align: middle;
+
+      }
+      .cabecera h1{
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+        color: black;
+      }
+      #logo{
+        width: 100px;;
+      }
+      .seccion{
+        width: 100%;
+      }
+      .cuerpo{
+        width: 100%;
+        margin:auto;
+        height: auto;
+        text-align: left;
+
+      }
+      article{
+        width: 100%;
+      }
+      .informacion{
+        width: 100%;
+        display: table;
+      }
+      .personal{
+        display: table-cell;
+        color: white;
+        width: 40%;
+        border-right: 1px solid white;
+      }
+      .contacta{
+        display: table-cell;
+        color: white;
+        width: 40%;
+      }
+      .contacta img{
+        float: left;
+      }
+      .contacta{
+        text-align: left;
+      }
+      .principal img{
+        width: 100%;
+        height: 600px;
+      }
+      .email,.phone{
+        width: 70px;
+      }
+      .contacta h2,.personal h2{
+        text-align: center;
+        color:black;
+        background-color: white;
+      }
+      .cajaEmail{
+        padding: 10% 0px 0px 3%;
+      }
+      .cajaPhone{
+        padding: 5% 0px 0px 3%;
+      }
+      .email,.phone{
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .cajaEmail p, .cajaPhone p{
+        padding-right: 2%;
+      }
+      .personal p{
+        color: black
+      }
+      .personal img{
+        width: 300px;
+      }
+      .texto{
+        text-align: center;
+      }
+      h2{
+        height: 125px;
+      }
+    </style>
+  </head>
+  <body>
+      <header class="cabecera">
+        <div class="logo">
+          <img src="logo/logo.svg" id="logo" alt="logo">
+        </div>
+          <h1>World Experience</h1>
+      </header>
+      <div class="cuerpo">
+        <section class="seccion">
+          <article class="articulo">
+            <div class="principal">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="espectacular/espectacular_Escritorio.jpg">
+                <source media="(min-width: 768px)" srcset="espectacular/espectacular_Tablet.jpg">
+                <source media="(min-width: 320px)" srcset="espectacular/espectacular_Movil.jpg">
+                <!-- img para cargar la imagen del elemento source -->
+                <img src="espectacular/espectacular.jpg" alt="espectacular">
+              </picture>
+            </div>
+            <div class="texto">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.</p>
+
+            </div>
+          </article>
+        </section>
+        </div>
+        <br>
+        <br><br>
+        <footer class="informacion">
+          <div class="personal">
+            <h2>Conocenos</h2>
+            <img src="personal/personal.jpg" alt="personal">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+               sed do eiusmodre magna </p>
+          </div>
+          <div class="contacta">
+            <h2>Contacta con nosotros</h2>
+            <div class="cajaEmail">
+              <img class="email" src="iconos/email.svg" alt="logoEmail">
+              <p>Escribe a <a href="mailto:mailto@dominio.es">mail@dominio.es</a></p>
+            </div>
+            <br>
+            <div class="cajaPhone">
+              <img class="phone" src="iconos/phone.svg" alt="llama">
+              <p>Llama al <a href="tel: +36 555-123-123">555-123-123</a></p>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>
