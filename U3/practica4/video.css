@@ -1,0 +1,26 @@
+video{
+    /*Ocupa el 100% del contenedor (eso es el 50% de la pÃ¡gina)*/
+    width:100%;
+    height: auto;
+    /*La instrucciÃ³n siguiente pone un lÃ­mite superior de 560px*/
+    /*max-width:560px;*/
+}
+.videoIframe{
+    height:0px;
+    width:100%;
+    padding-top:56.25%; /* RelaciÃ³n: 16/9 = 56.25% */
+    position:relative;
+}
+.videoIframe iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}
+
+.contVideoIframe{
+  width: 100%;
+   max-width:560px;
+   margin:auto;
+}
