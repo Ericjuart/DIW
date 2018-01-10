@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("p").html("esto es un p").width(200).addClass("importante").css("color","red");
+        var alumno = $(document.createElement("div")).addClass("alumno").attr("id", "al12345").html("Alumno 12345").css("font-style","italic");
+        $("body").append(alumno);
+      });
+    </script>
+  </head>
+  <body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </body>
+</html>

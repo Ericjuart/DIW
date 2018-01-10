@@ -29,9 +29,10 @@ footer ul li{
   padding-left: 5px;
   padding-right: 5px;
 }
-footer ul li a .fa {
+footer ul li a i.fa {
   font-size: 3em;
   border-radius: 50px;
+  
 }
 footer .fa-facebook-square{
   color: #204eb1;
