@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 3 jQuery</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+      $("#encendida").toggle();
+      $("#interruptor").click(function(){
+        var int = interruptor.innerHTML;
+
+        if (int == "Encender") {
+          $("#interruptor").html("Apagar");
+          // $("#apagada").hide();
+          // $("#encendida").show();
+          $("#apagada").toggle();
+          $("#encendida").toggle();
+        }
+        if(int == "Apagar"){
+          $("#interruptor").html("Encender");
+          $("#encendida").toggle();
+          $("#apagada").toggle();
+        }
+
+      })
+    });
+    </script>
+    <style media="screen">
+      img{
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img src="apagada.png" id="apagada">
+      <img src="encendida.png" id="encendida">
+      <br>
+      <button type="button" id="interruptor">Encender</button>
+    <center>
+  </body>
+</html>

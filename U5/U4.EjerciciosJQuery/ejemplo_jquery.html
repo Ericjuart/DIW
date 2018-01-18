@@ -7,7 +7,11 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $("p").html("esto es un p").width(200).addClass("importante").css("color","red");
+        $("p").on("click",function(){
+          $("p").hide();
+        })
         var alumno = $(document.createElement("div")).addClass("alumno").attr("id", "al12345").html("Alumno 12345").css("font-style","italic");
+
         $("body").append(alumno);
       });
     </script>

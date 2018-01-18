@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Plantilla básica JQuery</title>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		//Aquí puedes programar con JQuery
+    // 2.a) Formatear el texto y la imagen (inicialmente la imagen tiene 400px y está centrada)
+    $("body").css("color","red");
+    $("img").css("width","400px");
+    $("div").css("text-align","center");
+
+    //b) Ocultar inicialmente la imagen y los botones
+    $(".contenedor").hide();
+
+    //c) Desplegar la imagen cuando el usuario haga click en el título y modificar el título.
+		var contador = 0;
+    $("h1").click(function(){
+      $(".contenedor").slideToggle();
+      $("h1").html("La imagen se ha desplegado");
+// d) Plegar de nuevo la imagen cuando volvamos a pulsar sobre el título y modificar el título.
+			if(contador%2 != 0){
+				$("h1").html("La imagen se ha plegado");
+			}
+			contador++;
+    })
+
+		// e) Modificar el tamaño de la imagen cuando el usuario pulse los botontes + y -. Los
+			// incrementos/decrementos suponen una variación de 20px.
+
+		$("#masAncho").click(function(){
+			var ancho = document.getElementsByTagName("img")[0].width;
+			$("img").css("width",ancho+20);
+		})
+		$("#menosAncho").click(function(){
+			var ancho = document.getElementsByTagName("img")[0].width;
+			$("img").css("width",ancho-20);
+		})
+	});
+</script>
+</head>
+<body>
+  <h1>Haz click aquí para desplegar la imagen!</h1>
+  <div class="contenedor">
+  <img src="mundo.png">
+  <button id="masAncho">+</button>
+  <button id="menosAncho">-</button>
+  </div>
+</body>
+</html>
