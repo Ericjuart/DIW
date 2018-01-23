@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="estilo.css">
     <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(){
       onload = function(){
+
         //Inicialmente, ocultamos los contenidos excepto el de presentación
         document.getElementById("primeros").style.display = "none";
         document.getElementById("segundos").style.display = "none";
@@ -28,7 +30,14 @@
           // cancela el evento normal del enlace (equivale a e.preventDefault());
           return false;
         }
+        //ejercicio 1.a Cuando se pulse sobre el logo, se abrirá una nueva página.
+        document.getElementsByTagName("img")[0].addEventListener("click",function(){
+          window.open("iaia.html");
+        })
+
+
       }
+      })
     </script>
   </head>
   <body>
