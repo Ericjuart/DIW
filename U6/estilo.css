@@ -1,8 +1,13 @@
+/* ejercicio 1.b Comprueba si los colores son adecuados y
+selecciona otros, en caso de que no sea así. Ten en cuenta
+ que pueden cambiar cuando hacemos hover.*/
 * {
 	margin: 0px; padding: 0px;
-	font-family: arial, helvetica, sans-serif; color: #0bb664; background: #FFFFFF;
+	font-family: arial, helvetica, sans-serif; color:#07720d; background: #FFFFFF;
 	line-height: 1.3em;
 }
+/*he cambiado el color #0bb664 porque no tenia suficiante contraste*/
+
 
 /* Para que siempre aparezca la barra de desplazamiento vertical de la ventana del navegador */
 html {
@@ -47,11 +52,11 @@ p {
 p span{
 	font-style: italic;
 }
-
+/*EL COLOR #598eff DE LOS ENLACES CAMBIADOS POR FALTA DE CONTRASTE*/
 a {
-	color: #598eff; text-decoration: none; border-bottom: 1px dotted #598eff;
+	color:#0b56b1 ; text-decoration: none; border-bottom: 1px dotted #598eff;
 }
-
+/*AL HACER HOVER EL COLOR DE LA LETRA CON EL FONDO SI QUE TIENE EL SUFICIENTE CONTRASTE*/
 a:hover {
 	color: #003366; background: #CCCCCC; border-bottom: 1px solid #003366;
 }
@@ -136,4 +141,7 @@ img{
 .oculta {
   position: absolute;
   top: -5000px;
+}
+strong{
+	font-weight: bold;
 }
